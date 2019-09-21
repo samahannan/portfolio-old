@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap');
+body,
+html {
+  min-height: 100%;
+  color: #fff;
+  height: 100%;
+}
+#root {
+  font-family: 'Share Tech Mono', monospace;
+  background: transparent url(images/bg.jpg) no-repeat center bottom;
+  background-size: cover;
+  cursor: default;
+  min-height: 100%;
+  text-align: justify;
+}
+a {
+  color: inherit;
+}
+.App-header {
+  font-size: 30px;
+  padding: 10% 5%;
+}
+.skillsList {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 100px;
+  flex-wrap: wrap;
+}
+.skillsList li {
+  padding: 0 20px;
+  font-size: 55px;
+  position: relative;
+  cursor: default;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+.tooltip {
+  position: absolute;
+  background: #fff;
+  color: #000;
+  font-size: 12px;
+  padding: 5px;
+  left: 50%;
+  top: 110%;
+  display: none;
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.skillsList li:hover .tooltip,
+.skillsList li.active .tooltip {
+  display: block;
+}
+h1 {
+  margin-bottom: 100px;
+  line-height: 50px;
+}
+.react-icon:hover,
+.react-icon.active {
+  color: #61dbfb;
+}
+.angular-icon:hover,
+.angular-icon.active {
+  color: #b52e31;
+}
+.js-icon:hover,
+.js-icon.active {
+  color: #f7df1e;
+}
+.html-icon:hover,
+.html-icon.active {
+  color: #e34f26;
+}
+.css-icon:hover,
+.css-icon.active {
+  color: #176eb1;
+}
+
+.git-icon:hover,
+.git-icon.active {
+  color: #f1502f;
+}
+.bootstrap-icon:hover,
+.bootstrap-icon.active {
+  color: #080135;
+}
+.sass-icon:hover,
+.sass-icon.active {
+  color: #cd6799;
+}
+.jquery-icon:hover,
+.jquery-icon.active {
+  color: #70ab41;
+}
+.jquery-icon h3 {
+  font-size: 36px;
+}
+.jquery-icon {
+  display: flex;
+  align-items: center;
+}
+.contact {
+  line-height: 50px;
+}
+.name {
+  color: #000;
+  background: #fff;
+  padding: 2px 4px;
+}
+.contact a:hover {
+  background: #fff;
+  color: #000;
+  text-decoration: none;
+}
+@media only screen and (max-width: 1024px) {
+  .App-header {
+    font-size: 20px;
+  }
+  .skillsList {
+    margin-bottom: 50px;
+  }
+  h1 {
+    line-height: 40px;
+  }
+  #typewriter {
+    display: block;
+  }
+  .skillsList li {
+    padding: 20px;
+  }
+
+  .react-icon {
+    color: #61dbfb;
+  }
+  .angular-icon {
+    color: #b52e31;
+  }
+  .js-icon {
+    color: #f7df1e;
+  }
+  .html-icon {
+    color: #e34f26;
+  }
+  .css-icon {
+    color: #176eb1;
+  }
+  .git-icon {
+    color: #f1502f;
+  }
+  .bootstrap-icon {
+    color: #080135;
+  }
+  .sass-icon {
+    color: #cd6799;
+  }
+  .jquery-icon {
+    color: #70ab41;
+  }
+  .skillsList li {
+    margin-bottom: 50px;
+  }
+}
+@media only screen and (max-width: 760px) {
+  .skillsList li {
+    font-size: 40px;
+    padding: 0 20px;
+  }
+  .skillsList {
+    justify-content: center;
+  }
+  .skillsList {
+    margin-bottom: 25px;
+  }
+  h1 {
+    margin-bottom: 50px;
+  }
+  body,
+  html {
+    height: auto;
+  }
+  #root {
+    background-position: center;
+  }
+}
